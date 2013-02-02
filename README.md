@@ -13,4 +13,4 @@ prototypal objects with the building blocks of L-system generation.
 ## Test the prototype
 
 Hosted at Cloud9, in active development:
-[Test prototype](https://c9.io/humtron/m/workspace/index.htm)
+[Test prototype](https://c9.io/humtron/m-project/workspace/index.htm)

@@ -4,8 +4,7 @@ require.config({
 	// nice names for libraries
 	paths: {
 		"underscore": "underscore-min",
-		"util": "modules/util",
-		"ant": "modules/ant"
+		"util": "modules/util"
 	},
 	// for libraries that do not define 
 	// themselves as Require.js modules
@@ -16,10 +15,6 @@ require.config({
 		"util": {
 			deps: ["jquery"],
 			exports: "Util"
-		},
-		"ant": {
-			deps: ["jquery"],
-			exports: "Ant"
 		}
 	},
 	// for cache-busting/versioning
@@ -34,8 +29,8 @@ require(["jquery", "underscore", "m/Brain", "m/DOM"],
 );
 
 // set up shimmed modules
-define(["underscore", "util", "ant"],
-	function (_, Util, Ant) {
+define(["underscore", "util"],
+	function (_, Util) {
 	}
 );
 
