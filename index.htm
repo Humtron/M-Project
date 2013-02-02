@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The M Project</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=610">
+	<link type="image/icon" rel="shortcut icon" href="favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="css/main.css?v=1" />
+</head>
+<body>
+	<div id="container">
+		<div id="Meta" style="float:right">
+			<span id="ThemeLight" class="spanLink hide">Light</span>
+			<span id="ThemeDark" class="spanLink">Dark</span>
+		</div>
+
+		<h1>The M Project</h1>
+
+		<div id="Controller">
+			<div class="controllerBox" title="">
+				<input id='BrainThoughts' type='text' size='5' value='3'> 
+				thoughts: 
+				<input id="BrainThink" type="button" title="" value="Think">
+			</div>
+			<div class="controllerBoxRight">
+				DOM: 
+				<input id="Start" type="button" title="" value="Start"> 
+				<input id="Stop" type="button" title="" value="Stop" class="hide"> 
+				<input id="Clear" type="button" title="" value="Clear"> 
+			</div>
+		</div>
+
+		<div id="Biome"></div>
+	</div>
+
+	<script type="text/javascript" src="js/require-jquery.js?v=1" data-main="js/main"></script>
+	<script type="text/javascript">
+
+	// helps debug JS
+	"use strict";
+
+	$(document).ready(function () {
+		$("#ThemeLight").click(function() {
+			$("body").removeClass("dark");
+			$("#ThemeLight").hide();
+			$("#ThemeDark").show();
+		});
+		$("#ThemeDark").click(function() {
+			$("body").addClass("dark");
+			$("#ThemeLight").show();
+			$("#ThemeDark").hide();
+		});
+	});
+
+	</script>
+</body>
+</html>
